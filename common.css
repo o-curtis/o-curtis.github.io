@@ -1,0 +1,100 @@
+body {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	background-color: #070707;
+	overflow-x: hidden;
+}
+
+.content {
+	position: absolute;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+.main {
+	width: 50%;
+}
+
+.side {
+	width: 20%;
+}
+
+.card {
+	border-style:solid;
+	border-color:pink;
+	border-width:2px;
+	color: white;
+	margin: 5px 5px 10px;
+	padding: 5px 15px 5px;
+	border-radius: 10px;
+	background-color: #222;
+	display: block;
+}
+
+.figure{
+	padding-left: 20%;
+	width: 60%;
+}
+
+.caption{
+	font-family: Consolas, monospace;
+	font-style: italic;
+	font-size: 80%;
+	padding-left: 10%;
+	width: 80%;
+	color: bbb;
+}
+
+.title {
+	font-family: Consolas, monospace;
+	margin: 2px;
+	color: eee;
+}
+
+.subtitle {
+	font-family: Consolas, monospace;
+	margin: 2px;
+	color: bbb;
+}
+
+.card a {
+  color: #8c1919;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.card a:hover{
+  color: #B22222;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.nav{
+	font-size: 150%;
+	display: block;
+}
+
+.current{
+	color: #B22222 !important;
+	text-decoration: none !important;
+}
+
+.quicklink{
+	margin: 0px 0px 6px;
+}
+
+.quicklink a{
+	font-size: 120%;
+	color: eee !important;
+}
+
+.subitem {
+	margin-top: 0;
+	margin-left: 1em;
+	font-size: 90%;
+}
+
+.item {
+	margin: 0.5em 0;
+}
