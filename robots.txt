@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /cv.html
+Disallow: /index-old.html
+Disallow: /index%20-%20Copy.html
+Disallow: /teaching%20-%20Copy.html
+
+Sitemap: https://o-curtis.github.io/sitemap.xml

@@ -17,7 +17,10 @@ body {
 }
 
 .side {
-	width: 20%;
+	width: fit-content;
+	position: sticky;
+	top: 0;
+	align-self: flex-start;
 }
 
 .card {
@@ -37,6 +40,7 @@ body {
 .figure{
 	padding-left: 20%;
 	width: 60%;
+	height: auto;
 }
 
 .invert{
@@ -103,4 +107,48 @@ body {
 
 .item {
 	margin: 0.5em 0;
+}
+
+.topic {
+	scroll-margin-top: 10px;
+}
+
+.topichead {
+	cursor: pointer;
+}
+
+.topichead::after {
+	content: " [+]";
+	color: #f0a8a8;
+	font-size: 80%;
+}
+
+.topic.expanded .topichead::after {
+	content: " [-]";
+}
+
+.topicbody {
+	max-height: 230px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.topicbody::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 150px;
+	background: linear-gradient(rgba(34,34,34,0), #222);
+}
+
+.topic.expanded .topicbody {
+	max-height: none;
+	cursor: auto;
+}
+
+.topic.expanded .topicbody::after {
+	content: none;
 }
